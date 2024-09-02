@@ -1,0 +1,120 @@
+.grid-container {
+    width: 280px;
+    /* height: 300px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--darkgrey);
+    border: 2px solid var(--grey);
+    border-radius: 0.75rem;
+    cursor: pointer
+}
+.grid-container:hover{
+    border-color: var(--green);
+    transition: all 0.5s;
+}
+.grid-container-red:hover{
+    border-color: var(--red);
+    transition: all 0.5s;
+}
+
+.info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    max-width: 1rem 1.5rem;
+}
+
+.info img {
+    height: 3rem;
+    width: 3rem;
+    padding: 1rem;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.coin-symbol {
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.coin-name {
+    text-transform: capitalize;
+    color: var(--grey);
+    font-weight: normal;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.chip {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.chip-price {
+    border: 2px solid var(--green);
+    border-radius: 2rem;
+    padding: 0.35rem 1.25rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--green);
+    font-size: 1rem;
+    /* margin: 1rem 0.5rem 1rem 1rem; */
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+
+.chip-icon {
+    border: 2px solid var(--green);
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    color: var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    /* margin: 1rem; */
+}
+
+.chip-price:hover,
+.chip-icon:hover {
+    background-color: var(--green) !important;
+    color: var(--white) !important;
+    transition: all 0.5s;
+}
+
+.chip-red {
+    border: 2px solid var(--red) !important;
+    color: var(--red) !important;
+
+}
+
+.chip-red:hover {
+    background-color: var(--red) !important;
+    color: var(--white) !important;
+    transition: all 0.5s;
+}
+
+.info-container {
+    color: var(--green);
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+.total-volume, .market-cap {
+    color: var(--grey);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: auto;
+}
