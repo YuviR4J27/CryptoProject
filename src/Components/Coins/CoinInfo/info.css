@@ -1,0 +1,18 @@
+.heading, .desc {
+    margin: 1rem;
+}
+.heading{
+    padding-top: 1rem;
+}
+
+.desc{
+    cursor: pointer;
+    padding-bottom: 1rem;
+}
+.desc a{
+    text-decoration: underline;
+    color: var(--white);
+}
+.desc a:hover {
+    color: var(--purple);
+}

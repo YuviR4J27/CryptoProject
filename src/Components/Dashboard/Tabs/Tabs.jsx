@@ -7,6 +7,7 @@ import TabPanel from '@mui/lab/TabPanel';
 import { createTheme, ThemeProvider } from '@mui/material';
 import Grid from '../Grid/Grid';
 import './tabs.css'
+import List from '../List/List';
 
 export default function TabsComponent({ coins }) {
   const [value, setValue] = React.useState('1');
@@ -57,16 +58,16 @@ export default function TabsComponent({ coins }) {
           </div>
         </TabPanel>
         <TabPanel value="2">
-          <div>
+          <table className='list'>
             {coins.map((coin, i) => {
               // console.log(coin.name) 
-              return (
-                <p key={i}>
-                  {i + 1}.{coin.id}
-                </p>
-              )
+              // return (
+              //   <p key={i}>
+              //     {i + 1}.{coin.id}
+              //   </p>
+              return <List coin={coin} key = {i}/>
             })}
-          </div>
+          </table>
         </TabPanel>
       </TabContext>
     </ThemeProvider>

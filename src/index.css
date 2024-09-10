@@ -11,6 +11,10 @@
   --red: #FF0000;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   min-width: 320px;
@@ -47,4 +51,13 @@ img {
   -khtml-user-drag: none;
   -o-user-drag: none;
   user-drag: none;
+}
+
+.wrapper {
+  background-color: var(--darkgrey);
+  margin: 1.5rem auto;
+  border-radius: 0.8rem;
+  display: block;
+  width: 90%;
+  padding: 0rem 1rem;
 }
