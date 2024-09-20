@@ -7,11 +7,11 @@ import Select from '@mui/material/Select';
 import "./selectDays.css"
 
 
-export default function SelectDays({ days, handleChange }) {
+export default function SelectDays({ days, handleChange, noPTag }) {
 
     return (
         <div className='select_days'>
-            <p>Price Change In</p>
+            {!noPTag && <p>Price Change In</p>}
             <Select
                 sx={{
                     height: "2rem",

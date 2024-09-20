@@ -16,7 +16,7 @@ import PriceToggle from '../Components/Coins/PriceType/PriceToggle'
 function CoinPage() {
     const { id } = useParams()
     const [isLoading, setIsLoading] = useState(true)
-    const [coinData, setCoinData] = useState()
+    const [coinData, setCoinData] = useState({})
     const [days, setDays] = useState(90)
     const [chartData, setChartData] = useState({})
     const [priceType, setPriceType] = React.useState('prices');
